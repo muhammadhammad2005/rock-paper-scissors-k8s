@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="game">
+      <h1>Rock Paper Scissors</h1>
+
+      <div class="choices">
+        <button class="choice" data-move="rock">✊ Rock</button>
+        <button class="choice" data-move="paper">✋ Paper</button>
+        <button class="choice" data-move="scissors">✌️ Scissors</button>
+      </div>
+
+      <div class="result">
+        <p id="status">Make your move</p>
+        <p id="detail"></p>
+      </div>
+
+      <div class="scoreboard">
+        <h3>Scoreboard</h3>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+        <button id="reset">Reset</button>
+      </div>
+
+      <footer>
+        <small>Built with Flask. Containerized and ready for Kubernetes.</small>
+      </footer>
+    </div>
+
+    <script src="/static/main.js"></script>
+  </body>
+</html>
+

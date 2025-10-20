@@ -1,0 +1,46 @@
+:root {
+  --bg: #0f1724;
+  --card: #111827;
+  --accent: #3b82f6;
+  --muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #071027);
+  color: #e6eef8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 12px;
+  width: 360px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  text-align: center;
+}
+
+.choices { display: flex; justify-content: space-between; margin: 18px 0; }
+.choice {
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255,255,255,0.04);
+}
+.choice:hover { transform: translateY(-3px); }
+
+.result { margin-top: 12px; }
+#status { font-weight: 600; }
+
+.scoreboard { background: rgba(255,255,255,0.02); padding: 12px; border-radius: 8px; margin-top: 14px; }
+#reset { margin-top: 8px; padding: 8px 10px; border-radius: 6px; border: none; cursor: pointer; }
+
+footer { margin-top: 12px; color: var(--muted); }
+
